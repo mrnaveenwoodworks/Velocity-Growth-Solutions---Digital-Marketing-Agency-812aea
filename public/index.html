@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script src="https://subtle-druid-430b16.netlify.app/codemate-badge.js" defer></script>
+</head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1D4ED8" />
+    <meta name="description" content="Velocity Growth Solutions - Transform your brand's digital presence with our expert team of digital marketers and content creators. We specialize in social media growth, community building, and strategic marketing solutions." />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://velocitygrowth.com" />
+    <meta property="og:title" content="Velocity Growth Solutions - Digital Marketing Agency" />
+    <meta property="og:description" content="Transform your brand's digital presence with our expert team of digital storytellers and strategists." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@velocitygrowth" />
+    <meta name="twitter:title" content="Velocity Growth Solutions" />
+    <meta name="twitter:description" content="Expert digital marketing solutions for brand growth" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/twitter-card-image.jpg" />
+    
+    <title>Velocity Growth Solutions - Digital Marketing Agency</title>
+    
+    <!-- Critical CSS -->
+    <style>
+      /* Base styles */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #ffffff;
+        color: #1a1a1a;
+      }
+      
+      /* Loading animation */
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .loader-content {
+        text-align: center;
+      }
+      
+      .loader-icon {
+        animation: spin 1s linear infinite;
+        margin-bottom: 1rem;
+        color: #2563EB;
+      }
+      
+      .loader-text {
+        color: #4B5563;
+        font-size: 1rem;
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+      
+      .loader-progress {
+        width: 200px;
+        height: 4px;
+        background: #E5E7EB;
+        border-radius: 2px;
+        margin: 1rem auto 0;
+        overflow: hidden;
+      }
+      
+      .loader-progress-bar {
+        width: 40%;
+        height: 100%;
+        background: #2563EB;
+        border-radius: 2px;
+        animation: loading 2s infinite ease-in-out;
+      }
+      
+      @keyframes loading {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(350%); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 2rem; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+        <h1 style="color: #DC2626; margin-bottom: 1rem;">JavaScript Required</h1>
+        <p>You need to enable JavaScript to run this application. Here's how to <a href="https://www.enable-javascript.com/" style="color: #2563EB;">enable JavaScript in your browser</a>.</p>
+      </div>
+    </noscript>
+    
+    <!-- React root element -->
+    <div id="root"></div>
+    
+    <!-- Loading state -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="48" height="48"><rect width="256" height="256" fill="none"/><line x1="128" y1="32" x2="128" y2="64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="224" y1="128" x2="192" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="195.88" y1="195.88" x2="173.25" y2="173.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="128" y1="224" x2="128" y2="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="60.12" y1="195.88" x2="82.75" y2="173.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="32" y1="128" x2="64" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><line x1="60.12" y1="60.12" x2="82.75" y2="82.75" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+        </div>
+        <p class="loader-text">Preparing an amazing experience...</p>
+        <div class="loader-progress">
+          <div class="loader-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Error handling -->
+    <script>
+      window.addEventListener("error", function(e) {
+        console.error("Global error:", e);
+        const loader = document.getElementById("loader");
+        if (loader) {
+          loader.innerHTML = `
+            <div style="text-align: center; padding: 2rem;">
+              <div style="color: #DC2626; margin-bottom: 1rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="48" height="48"><rect width="256" height="256" fill="none"/><circle cx="128" cy="200" r="20"/><line x1="128" y1="48" x2="128" y2="148" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></svg>
+              </div>
+              <h2 style="color: #DC2626; margin-bottom: 1rem;">Loading Error</h2>
+              <p style="color: #4B5563; margin-bottom: 1rem;">There was a problem loading the application.</p>
+              <button 
+                onclick="window.location.reload()"
+                style="background: #2563EB; color: white; padding: 0.5rem 1rem; border: none; border-radius: 0.375rem; cursor: pointer;"
+              >
+                Retry
+              </button>
+            </div>
+          `;
+        }
+      });
+
+      // Remove loader when content is ready
+      window.addEventListener("load", function() {
+        setTimeout(() => {
+          const loader = document.getElementById("loader");
+          if (loader) {
+            loader.style.opacity = "0";
+            setTimeout(() => {
+              loader.style.display = "none";
+            }, 500);
+          }
+        }, 500); // Minimum loading time to prevent flash
+      });
+    </script>
+  </body>
+</html>
